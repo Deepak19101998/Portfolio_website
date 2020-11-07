@@ -47,7 +47,7 @@ function Footer(){
                     </div>
                 </div>
                 <div>
-                    <p className="text-muted">Copyrights Deepak Gupta 2020</p>
+                    <p className="text-muted">Copyrights Deepak Gupta 2k20</p>
                 </div>
             </div>
         </footer>
