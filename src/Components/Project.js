@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { v4 as uuid } from "uuid";
 
 function Project(){
     
@@ -32,8 +33,8 @@ function Project(){
             </div>
             <div className="row justify-content-around text-center py-3">
                 {projects.map((abc) => (
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 my-2">
-                        <ProjectCard project={abc} />
+                    <div key={uuid()} className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 my-2">
+                        <ProjectCard key={uuid()} project={abc} />
                     </div>
                 ))}
             </div>

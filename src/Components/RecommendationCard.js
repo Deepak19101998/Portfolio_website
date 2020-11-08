@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { v4 as uuid } from "uuid";
 
 function RecommendationCard(props) {
     const {about, title, company} = props.recommendationcard;
     return (
-        <div className="card shadow-lg">
+        <div key={uuid()} className="card shadow-lg">
             <div className="card-body">
                 <h3 className="card-text">
                     {title}

@@ -1,5 +1,6 @@
 import React from "react";
 import BlogCard from "./BlogCard";
+import { v4 as uuid } from "uuid";
 
 function Blog(){
     const blogs = [
@@ -30,8 +31,8 @@ function Blog(){
             </div>
             <div className="row justify-content-around text-center py-2">
                 {blogs.map((blog) =>(
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 my-2">
-                            <BlogCard blog={blog}/>
+                        <div key={uuid()} className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 my-2">
+                            <BlogCard key={uuid()} blog={blog}/>
                         </div>
                 ))
                 }

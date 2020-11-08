@@ -1,13 +1,87 @@
 import React from "react";
 import "../App.css";
-import HTML from "../pictures/html5.png";
-import Css from "../pictures/css3.png";
-import js from "../pictures/javascript.png";
-import boot from "../pictures/bootstrap4.png";
-import react from "../pictures/react.png";
-import pythn from "../pictures/python.png";
-import flask from "../pictures/flask.png";
-import msql from "../pictures/mysql.png";
+import TechnologyCard from "./TechnologyCard";
+import { v4 as uuid } from "uuid";
+
+const technologies = [
+    {
+        id: 1,
+        imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/html5.png",
+        name:"HTML5",
+        starsTotal:3,
+        starsActive:2
+    },
+    {
+        id: 2,
+        name: "CSS3",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/css3.png",
+        starsTotal: 3,
+        starsActive: 1,
+      },
+      {
+        id: 3,
+        name: "Javascript",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/javascript.png",
+        starsTotal: 3,
+        starsActive: 2,
+      },
+      {
+        id: 4,
+        name: "Bootstrap 4",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/bootstrap4.png",
+        starsTotal: 3,
+        starsActive: 1,
+      },
+      {
+        id: 5,
+        name: "React",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/react.png",
+        starsTotal: 3,
+        starsActive: 3,
+      },
+      {
+        id: 6,
+        name: "MySQL",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/mysql.png",
+        starsTotal: 3,
+        starsActive: 1,
+      },
+      {
+        id: 7,
+        name: "Python",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/python.png",
+        starsTotal: 3,
+        starsActive: 2,
+      },
+      {
+        id: 8,
+        name: "Flask",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/flask.png",
+        starsTotal: 3,
+        starsActive: 0,
+      }
+];
+
+const finalTechnologyRow = [];
+
+for(let i=0;i<technologies.length/4;i++){
+    let technologyRow = technologies.slice(i*4,(i+1)*4);
+    // console.log(row); only for checking purpose
+    finalTechnologyRow.push(
+        <div key={uuid()} className="d-flex d-flex-row justify-content-around py-3">
+            {technologyRow.map((technology)=>(
+                <TechnologyCard key={uuid()} technology={technology}/>
+            ))}
+        </div>
+    );
+}
 
 function Technology(){
     
@@ -17,75 +91,7 @@ function Technology(){
                 <h1 className="py-2">Technology Stack</h1>
                 <p className="h3">I design, Develop adn deliver with this weapon</p>
             </div>
-
-            <div className="d-flex flex-row justify-content-around text-center py-3">
-                <div>
-                    <img className="rounded-circle crd-img-size" src={HTML} alt="technology-related-img"  />
-                    <div>
-                        <span class="text-info">★</span>
-                        <span class="text-info">★</span>
-                        <span class="">★</span>
-                    </div>
-                </div>
-                <div>
-                    <img className="rounded-circle crd-img-size" src={Css} alt="Technoloy-related-img"/>
-                    <div>
-                        <span class="text-info">★</span>
-                        <span class="text-info">★</span>
-                        <span class="">★</span>
-                    </div>
-                </div>
-                <div>
-                    <img className="rounded-circle crd-img-size" src={js} alt="Technoloy-related-img"/>
-                    <div>
-                        <span class="text-info">★</span>
-                        <span class="text-info">★</span>
-                        <span class="">★</span>
-                    </div>
-                </div>
-                <div>
-                    <img className="rounded-circle crd-img-size" src={boot} alt="Technoloy-related-img"/>
-                    <div>
-                        <span class="text-info">★</span>
-                        <span class="text-info">★</span>
-                        <span class="">★</span>
-                    </div>
-                </div>
-            </div>
-            <div className="d-flex flex-row justify-content-around text-center py-3">
-                <div>
-                    <img className="rounded-circle crd-img-size" src={react} alt="Technoloy-related-img"/>
-                    <div>
-                        <span class="text-info">★</span>
-                        <span class="text-info">★</span>
-                        <span class="">★</span>
-                    </div>
-                </div>
-                <div>
-                    <img className="rounded-circle crd-img-size" src={flask} alt="Technoloy-related-img"/>
-                    <div>
-                        <span class="text-info">★</span>
-                        <span class="text-info">★</span>
-                        <span class="">★</span>
-                    </div>
-                </div>
-                <div>
-                    <img className="rounded-circle crd-img-size" src={pythn} alt="Technoloy-related-img"/>
-                    <div>
-                        <span class="text-info">★</span>
-                        <span class="text-info">★</span>
-                        <span class="">★</span>
-                    </div>
-                </div>
-                <div>
-                    <img className="rounded-circle crd-img-size" src={msql} alt="Technoloy-related-img"/>
-                    <div>
-                        <span class="text-info">★</span>
-                        <span class="text-info">★</span>
-                        <span class="">★</span>
-                    </div>
-                </div>
-            </div>
+             {finalTechnologyRow}
         </div>
     );
 }

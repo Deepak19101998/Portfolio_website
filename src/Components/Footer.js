@@ -5,7 +5,7 @@ function Footer(){
                 <div className="row">
                     <div className="col-12">                  
                         <div>
-                            <p className="text-light my-2 h3">Tumko bad me banayenge</p>
+                            <p className="text-light my-2 h3">Intersted in working with me?</p>
                             <button className="btn btn-outline-light btn-sm">Let's talk</button>
                         </div>
                     </div>

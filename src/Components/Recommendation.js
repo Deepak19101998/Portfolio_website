@@ -1,5 +1,5 @@
-const { default: RecommendationCard } = require("./RecommendationCard");
-
+import { v4 as uuid } from "uuid";
+import RecommendationCard from "./RecommendationCard";
 
 function Recommendation(){
 
@@ -46,8 +46,8 @@ function Recommendation(){
         <div className="container-fluid py-3">
             <div className="row text-center">
                 {recommendationcards.map((recommendationcard)=>(
-                    <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-3"> 
-                        <RecommendationCard recommendationcard={recommendationcard} />
+                    <div key={uuid()} className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-3"> 
+                        <RecommendationCard key={uuid()} recommendationcard={recommendationcard} />
                     </div>  
                 ))}              
             </div>
