@@ -18,7 +18,7 @@ function Technology(){
                 <p className="h3">I design, Develop adn deliver with this weapon</p>
             </div>
 
-            <div className="d-flex flex-row flex-wrap justify-content-around text-center py-3">
+            <div className="d-flex flex-row justify-content-around text-center py-3">
                 <div>
                     <img className="rounded-circle crd-img-size" src={HTML} alt="technology-related-img"  />
                     <div>
@@ -52,7 +52,7 @@ function Technology(){
                     </div>
                 </div>
             </div>
-            <div className="d-flex flex-wrap justify-content-around text-center py-3">
+            <div className="d-flex flex-row justify-content-around text-center py-3">
                 <div>
                     <img className="rounded-circle crd-img-size" src={react} alt="Technoloy-related-img"/>
                     <div>
