@@ -1,7 +1,7 @@
 import React from 'react'
 
-function SkillCard(props) {
-    const {title, about, message} = props.skillcard;
+function RecommendationCard(props) {
+    const {about, title, company} = props.recommendationcard;
     return (
         <div className="card shadow-lg">
             <div className="card-body">
@@ -12,10 +12,10 @@ function SkillCard(props) {
                     {about}
                 </p>
                 <p className="card-text">
-                    {message}
+                    {company}
                 </p>
             </div>
         </div>
     )
 }
-export default SkillCard;
+export default RecommendationCard;
