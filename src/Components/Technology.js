@@ -75,7 +75,7 @@ for(let i=0;i<technologies.length/4;i++){
     let technologyRow = technologies.slice(i*4,(i+1)*4);
     // console.log(row); only for checking purpose
     finalTechnologyRow.push(
-        <div key={uuid()} className="d-flex d-flex-row justify-content-around py-3">
+        <div key={uuid()} className="d-flex flex-wrap justify-content-around py-3">
             {technologyRow.map((technology)=>(
                 <TechnologyCard key={uuid()} technology={technology}/>
             ))}
