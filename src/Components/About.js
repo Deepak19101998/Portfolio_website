@@ -13,7 +13,7 @@ function About(){
                     </p>
                 </div>
                 <div className="row justify-content-center py-3">
-                    <div className="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-justify">
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 text-justify">
                         <h4 className="font-weight-dark text-center">
                             What can I do?
                         </h4>
@@ -24,9 +24,9 @@ function About(){
                             nostrud labore tempor ut labore exercitation.
                         </p>
                     </div>
-                    <div className="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
                         <h4 className="font-weight-dark text-center">
-                            What I am doing Currently?
+                            What I am doing ?
                         </h4>
                         <p className="font-weight-dark text-dark mx-3">
                             Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -37,7 +37,7 @@ function About(){
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    <div className="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-justify">
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 text-justify">
                         <h4 className="font-weight-dark text-center">
                             What can I do?
                         </h4>
@@ -48,9 +48,9 @@ function About(){
                             nostrud labore tempor ut labore exercitation.
                         </p>
                     </div>
-                    <div className="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
                         <h4 className="font-weight-dark text-center">
-                            What I am doing Currently?
+                            What I am doing ?
                         </h4>
                         <p className="font-weight-dark text-dark mx-3">
                             Lorem ipsum dolor sit amet, consectetur adipiscing 

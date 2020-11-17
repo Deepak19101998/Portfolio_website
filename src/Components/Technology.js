@@ -88,7 +88,7 @@ function Technology(){
     return(
         <div className="container-fluid py-4 bg-light">
             <div className="text-center font-weight-light">
-                <h1 className="py-2">Technology Stack</h1>
+                <h1 className="py-2 text-info">Technology Stack</h1>
                 <p className="h3">I design, Develop adn deliver with this weapon</p>
             </div>
              {finalTechnologyRow}

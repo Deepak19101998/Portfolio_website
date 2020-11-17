@@ -1,3 +1,6 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
+
 function Footer(){
     return(
         <footer>
@@ -6,7 +9,9 @@ function Footer(){
                     <div className="col-12">                  
                         <div>
                             <p className="text-light my-2 h3">Intersted in working with me?</p>
-                            <button className="btn btn-outline-light btn-sm">Let's talk</button>
+                            <Link to="/contact">
+                                <button className="btn btn-outline-light btn-sm">Let's talk</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -14,11 +19,11 @@ function Footer(){
                     <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 py-3">
                         <div>
                             <h5 className="text-info">More Info</h5>
-                            <a href="/" className="d-block text-light">Blog</a>
-                            <a href="/" className="d-block text-light">Home</a>
-                            <a href="/" className="d-block text-light">Content</a>
-                            <a href="/" className="d-block text-light">Projects</a>
-                            <a href="/" className="d-block text-light">Write a recommendation <span className="fas fa-heart"></span></a>
+                            <Link to="/blog" className="d-block text-light">Blog</Link>
+                            <Link to="/" className="d-block text-light">Home</Link>
+                            <Link to="/contact" className="d-block text-light">Contact</Link>
+                            <Link to="/project" className="d-block text-light">Projects</Link>
+                            <Link to="/write-a-recommendation" className="d-block text-light">Write a recommendation <span className="fas fa-heart"></span></Link>
                         </div>
                     </div>
                     <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 py-2">

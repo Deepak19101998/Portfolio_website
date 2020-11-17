@@ -1,16 +1,19 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component{
     render(){
         return(
         <nav className="navbar navbar-expand-md bg-white">
         <div className="container-fluid my-2 bg-white">
-            <a href="/" className="navbar-brand text-dark font-weight-bold">
+            <Link to="/" className="navbar-brand text-dark font-weight-bold">
                 Deepak
-            </a>
-            <button className="btn btn-outline-info ml-auto">
-                Contact Us
-            </button>
+            </Link>
+            <Link to="/contact" className="ml-auto">
+                <button className="btn btn-outline-info">
+                    Contact Us
+                </button>
+            </Link>
             <button
             className="navbar-toggler"
             data-target="#collapse"
