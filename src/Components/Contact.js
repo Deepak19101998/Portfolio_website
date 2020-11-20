@@ -46,25 +46,25 @@ class Contact extends Component{
                 </h1>
                 <div className="row justify-content-center py-2">
                     <div className="col-11 col-md-11 col-lg-6 col-xl-6">
-                        <form>
+                        <form onSubmit={this.onSubmitForm}> 
                             <div className="form-group">
                                 <label htmlFor="name">Name *</label>
                                 <input className="form-control" 
                                 type="text" 
                                 name="name" 
-                                required
                                 placeholder="Type your name" 
                                 onChange = {this.onNameChange}
+                                required
                                 />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="Email">Email *</label>
                                 <input className="form-control"
                                 type="email" 
-                                name="email" 
-                                required
+                                name="email"
                                 placeholder="Type your email"
                                 onChange = {this.onNameChange}
+                                required
                                 />
                             </div>
                             <div className="form-group">
@@ -75,10 +75,10 @@ class Contact extends Component{
                                     name="description" 
                                     className="form-control" 
                                     rows="5"
-                                    onChange = {this.onNameChange}>  
+                                    onClick = {this.onNameChange}>  
                                 </textarea>
                             </div>
-                            <button type="submit" className="btn btn-outline-danger float-right" onClick={this.onSubmitForm}> 
+                            <button type="submit" className="btn btn-outline-danger float-right" onSubmit={this.onSubmitForm}> 
                                 Let's talk business
                             </button>
                         </form>
