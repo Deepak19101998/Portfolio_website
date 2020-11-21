@@ -47,7 +47,7 @@ class AddProject extends Component{
     render(){
         const {imageurl,title,excerpt,body,submitMessage,submitMessageTextColor} = this.state;
         return(
-            <div className="container-fluid py-lg-3 my-lg-5">
+            <div className="container-fluid py-lg-3 my-lg-4 my-3 py-2">
                 <div className="text-center">
                     <h1 className="font-weight-light">
                         <span className="text-info">Add </span>
@@ -110,7 +110,7 @@ class AddProject extends Component{
                         </div>
                     </div>
                     <div className="col-12 col-md-12 col-lg-6 col-xl-6 markdown">
-                        <div className="text-center">
+                        <div className="text-center my-lg-0 my-3">
                             <h1 className="font-weight-light text-danger">{title}</h1>
                         </div>
                         <div className="py-lg-2 justiy-content-center">

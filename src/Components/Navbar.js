@@ -10,8 +10,13 @@ class Navbar extends Component{
                 Deepak
             </Link>
             <Link to="/contact" className="ml-auto">
-                <button className="btn btn-outline-info">
+                <button className="btn btn-dark">
                     Contact Us
+                </button>
+            </Link>
+            <Link to="/add/project" className="mx-lg-3 mx-2">
+                <button className="btn btn-dark">
+                    Add Project
                 </button>
             </Link>
             <button
@@ -26,8 +31,6 @@ class Navbar extends Component{
                     <a href="/" className="nav-link text-dark">Blog 2</a>
                     <a href="/" className="nav-link text-dark">Blog 3</a>
                     <a href="/" className="nav-link text-dark">Blog 4</a>
-                    <a href="/" className="nav-link text-dark">Blog 5</a>
-                    <a href="/" className="nav-link text-dark">Blog 6</a>
             </div>
         </div>
     </nav>  
