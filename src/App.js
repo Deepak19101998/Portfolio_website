@@ -10,25 +10,28 @@ import ProjectPage from "./Components/ProjectPage.js";
 import BlogPage from "./Components/BlogPage.js"
 import AddProject from "./Components/AddProject";
 import HomePage from "./Components/HomePage.js";
+import {Provider} from "./context.js"
 
 function App(){
   return(
-    <BrowserRouter>
-      <Navbar />
-        <Switch>
+    <Provider>
+      <BrowserRouter>
+        <Navbar />
+          <Switch>
 
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/blog" component={Blog} />
-          <Route exact path="/project" component={Project}/>
-          <Route exact path="/add/project" component={AddProject} />
-          <Route exact path="/projectpage/:id" component={ProjectPage}/>
-          <Route exact path="/blogpage/:id" component={BlogPage}/>
-          <Route component={NotFound}/>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/blog" component={Blog} />
+            <Route exact path="/project" component={Project}/>
+            <Route exact path="/add/project" component={AddProject} />
+            <Route exact path="/projectpage/:id" component={ProjectPage}/>
+            <Route exact path="/blogpage/:id" component={BlogPage}/>
+            <Route component={NotFound}/>
 
-        </Switch>
-      <Footer />  
-    </BrowserRouter>
+          </Switch>
+        <Footer />  
+      </BrowserRouter>
+    </Provider>
   );
 }
 
