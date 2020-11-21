@@ -11,18 +11,42 @@ export class Provider extends Component{
                 ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
                 title:"Project 1",
                 content:"This is my project about...",
+                body : "Body 1",
             },
             {
                 id: 2,
                 ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
                 title:"Project 2",
                 content:"This is my project about...",
+                body : "Body 2",
             },
             {   
                 id:3,
                 ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
                 title:"Project 3",
                 content:"This is my project about...",
+                body : "Body 3",
+            },
+            {   
+              id:4,
+              ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
+              title:"Project 4",
+              content:"This is my project about...",
+              body : "Body 4",
+            },
+            {   
+              id:5,
+              ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
+              title:"Project 5",
+              content:"This is my project about...",
+              body : "Body 5",
+            },
+            {   
+              id:6,
+              ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
+              title:"Project 6",
+              content:"This is my project about...",
+              body : "Body 6",
             },
         ],
        
@@ -45,7 +69,19 @@ export class Provider extends Component{
                 imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
                 title:"Blog 3",
                 content:"This is my Blog about..."
-            }
+            },
+            {
+              id: 4,
+              imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+              title:"Blog 4",
+              content:"This is my Blog about..."
+            },
+            {
+              id: 5,
+              imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+              title:"Blog 5",
+              content:"This is my Blog about..."
+            },
         ],
 
         recommendationcards : 
@@ -87,7 +123,7 @@ export class Provider extends Component{
                 company:"CEO At KLM Company"
             }       
         ],
-        
+
         technologies : [
             {
                 id: 1,

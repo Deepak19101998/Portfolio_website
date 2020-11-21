@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { v4 as uuid } from "uuid";
 import {Consumer} from "../context.js";
+import {Link} from "react-router-dom";
 
 function Project(){
     return(
@@ -15,16 +16,16 @@ function Project(){
                         <p className="h3">I build products just like this</p>
                     </div>
                     <div className="row justify-content-around text-center py-3">
-                        {projects.map((abc) => (
-                            <div key={uuid()} className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 my-2">
-                                <ProjectCard key={uuid()} project={abc} />
+                        {projects.slice(0,3).map((abc) => (
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 my-2">
+                                <ProjectCard key={projects.id} project={abc} />
                             </div>
                         ))}
                     </div>
                     <div className="py-4">
-                            <a href="/" className="text-right text-dark font-weight-bold">
+                            <Link to="allproject" className="text-right text-dark font-weight-bold">
                                 <h5>See My Projects <span className="fas fa-arrow-right align-middle"></span></h5>
-                            </a>
+                            </Link>
                     </div>
                 </div>
                 );

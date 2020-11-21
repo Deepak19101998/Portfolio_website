@@ -11,6 +11,8 @@ import BlogPage from "./Components/BlogPage.js"
 import AddProject from "./Components/AddProject";
 import HomePage from "./Components/HomePage.js";
 import {Provider} from "./context.js"
+import AllProject from "./Components/AllProject.js";
+import AllBlogs from "./Components/AllBlogs.js"
 
 function App(){
   return(
@@ -23,7 +25,9 @@ function App(){
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/project" component={Project}/>
-            <Route exact path="/add/project" component={AddProject} />
+            <Route exact path="/allproject" component={AllProject} />
+            <Route exact path="/allblog" component={AllBlogs}/>
+            <Route exact path="/addproject" component={AddProject} />
             <Route exact path="/projectpage/:id" component={ProjectPage}/>
             <Route exact path="/blogpage/:id" component={BlogPage}/>
             <Route component={NotFound}/>

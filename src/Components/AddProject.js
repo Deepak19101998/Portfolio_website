@@ -89,6 +89,7 @@ class AddProject extends Component{
                                     required    
                                 />
                             </div>
+                            <label htmlFor="">Optional</label>
                             <SimpleMDE 
                                 onChange = {this.handleBodyChange}
                                 options={{
@@ -114,7 +115,7 @@ class AddProject extends Component{
                             <h1 className="font-weight-light text-danger">{title}</h1>
                         </div>
                         <div className="py-lg-2 justiy-content-center">
-                            <img src={imageurl} />
+                            <img src={imageurl} alt={title}/>
                         </div>   
                         <div className="justify-content-center my-2">
                             <p className="lead text-info">{excerpt}</p>

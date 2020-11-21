@@ -10,7 +10,6 @@ class Recommendation extends Component{
         }
     
     handleClick = (e) =>{
-        let {actualId} = this.state;
         let targetId = e.target.parentNode;
          if(targetId.parentNode.parentNode.getAttribute('id')!=null){
             this.setState({
