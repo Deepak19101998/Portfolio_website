@@ -7,10 +7,10 @@ function RecommendationModal(props) {
             <div className="modal-dialog modal-md">
                 <div className="modal-content">       
                     <div className="modal-header">
-                        <h3>{recommendationcards[actualId].title}</h3>
+                        <h3>{recommendationcards[actualId].message}</h3>
                     </div>
                     <div className="modal-body">
-                        {recommendationcards[actualId].about}
+                        {recommendationcards[actualId].name}
                     </div>
                     <div className="mb-3 modal-footer">
                         {recommendationcards[actualId].company} 

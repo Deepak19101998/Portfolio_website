@@ -7,7 +7,7 @@ function ProjectPage(props){
                 const {projects} = value;
                 const id = props.match.params.id;
                 const project = projects.filter((project) => project.id == id)[0];
-                const {ImageUrl,title,content,body} = project;
+                const {ImageUrl,title,content} = project;
                 return(
                     <div className="container py-2 markdown">
                         <div className="row justify-content-center">

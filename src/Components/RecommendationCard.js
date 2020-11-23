@@ -2,19 +2,20 @@ import React from 'react';
 import { v4 as uuid } from "uuid";
 
 function RecommendationCard(props) {
-    const {about, title, company} = props.recommendationcard;
-    const shorttitle = title.slice(0,20);
+
+    const {message, name, company} = props.recommendationcard;
+    const shortmessage = message.slice(0,20);
     
     return (
         <div key={uuid()} className="card shadow-lg">
             <div className="card-body">
-                <h4 className="card-text">
-                    {shorttitle+"...."}
-                </h4>
-                <p className="card-text mb-0">
-                    {about}
+                <h3 className="card-text">
+                    {shortmessage+"...."}
+                </h3>
+                <p className="card-text h5 mb-2">
+                    {name+" Case"}
                 </p>
-                <p className="card-text">
+                <p className="card-text h5">
                     {company}
                 </p>
             </div>

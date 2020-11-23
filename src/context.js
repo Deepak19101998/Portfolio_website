@@ -3,7 +3,32 @@ import React,{Component} from 'react';
 const Context = React.createContext();
 
 export class Provider extends Component{
+    addHandler = (action, newObject) => {
+      switch(action){
+        case "ADD_PROJECT":
+          this.setState({
+            projects : [newObject, ...this.state.projects]
+          });
+          break;
+
+        case "ADD_BLOG":
+          this.setState({
+            blogs : [newObject, ...this.state.blogs]
+          });
+          break;
+
+        case "ADD_RECOMMENDATION":
+          this.setState({
+            recommendationcards : [...this.state.recommendationcards, newObject]
+          });
+          break;
+
+        default:
+          break;
+      }
+    }
     state = {
+      addHandler : this.addHandler,
         projects:
         [
             {
@@ -54,31 +79,31 @@ export class Provider extends Component{
         [   
             {
                 id: 1,
-                imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+                ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
                 title:"Blog 1",
                 content:"This is my Blog about..."
             },
             {
                 id: 2,
-                imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+                ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
                 title:"Blog 2",
                 content:"This is my Blog about..."
             },
             {
                 id: 3,
-                imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+                ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
                 title:"Blog 3",
                 content:"This is my Blog about..."
             },
             {
               id: 4,
-              imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+              ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
               title:"Blog 4",
               content:"This is my Blog about..."
             },
             {
               id: 5,
-              imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+              ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
               title:"Blog 5",
               content:"This is my Blog about..."
             },
@@ -86,42 +111,48 @@ export class Provider extends Component{
 
         recommendationcards : 
         [
-            {
-                id: 0,
-                title:"He is a Good Engineer",
-                about:"Random Guy",
-                company:"CEO At MNO Company"
-            },
-            {
-                id: 1,
-                title:"He is a Good Engineer",
-                about:"Random Girl",
-                company:"CEO At ABC Company"
-            },
-            {
-                id: 2,
-                title:"He is a Good Engineer",
-                about:"Random Boy",
-                company:"CEO At BCD Company"
-            },
-            {
-                id: 3,
-                title:"He is a Good Engineer",
-                about:"Random Uncle",
-                company:"CEO At EFG Company"
-            },
-            {
-                id: 4,
-                title:"He is a Good Engineer",
-                about:"Random project",
-                company:"CEO At HIJ Company"
-            },
-            {
-                id: 5,
-                title:"He is a Good Engineer",
-                about:"Random task",
-                company:"CEO At KLM Company"
-            }       
+          {
+            id: 0,
+            name: "Random guy 1",
+            company: "ABC company",
+            designation: "CEO",
+            message: "He is a good engineer",
+          },
+          {
+            id: 1,
+            name: "Random guy 2",
+            company: "ABC company",
+            designation: "Director",
+            message: "He is a lazy person",
+          },
+          {
+            id: 2,
+            name: "Random guy 3",
+            company: "ABC company",
+            designation: "Manager",
+            message: "He is an excellent developer",
+          },
+          {
+            id: 3,
+            name: "Random guy 4",
+            company: "ABC company",
+            designation: "SDE",
+            message: "He gets things done so quickly",
+          }, 
+          {
+            id: 4,
+            name: "Random guy 5",
+            company: "XYZ company",
+            designation: "CEO",
+            message: "He gets things done so quickly",
+          },  
+          {
+            id: 5,
+            name: "Random guy 6",
+            company: "MNO company",
+            designation: "Employee",
+            message: "He gets things done so quickly",
+          },      
         ],
 
         technologies : [
@@ -193,9 +224,9 @@ export class Provider extends Component{
     
     render(){
         return(
-            <Consumer.Provider value={this.state}>
+            <Context.Provider value={this.state}>
                 {this.props.children}
-            </Consumer.Provider>
+            </Context.Provider>
         )
     }
 }

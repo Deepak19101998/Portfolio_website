@@ -13,7 +13,7 @@ class Contact extends Component{
         }  
     }
 
-    onNameChange = (event) =>{
+    onChangeHandler = (event) =>{
         this.setState({
             [event.target.name] : event.target.value,
         });
@@ -53,7 +53,7 @@ class Contact extends Component{
                                 type="text" 
                                 name="name" 
                                 placeholder="Type your name" 
-                                onChange = {this.onNameChange}
+                                onChange = {this.onChangeHandler}
                                 required
                                 />
                             </div>
@@ -63,7 +63,7 @@ class Contact extends Component{
                                 type="email" 
                                 name="email"
                                 placeholder="Type your email"
-                                onChange = {this.onNameChange}
+                                onChange = {this.onChangeHandler}
                                 required
                                 />
                             </div>
@@ -75,7 +75,7 @@ class Contact extends Component{
                                     name="description" 
                                     className="form-control" 
                                     rows="5"
-                                    onClick = {this.onNameChange}>  
+                                    onChange = {this.onChangeHandler}>  
                                 </textarea>
                             </div>
                             <button type="submit" className="btn btn-outline-danger float-right" onSubmit={this.onSubmitForm}> 

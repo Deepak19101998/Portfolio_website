@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 function ProjectCard(props){
-    const {id, title, content, ImageUrl, body} = props.project;
+    const {id, title, content, ImageUrl} = props.project;
         return(
             <div className="card shadow-lg">
                 <img src={ImageUrl} alt="Project-img" className="img-fluid card-img-top"/>

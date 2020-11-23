@@ -14,11 +14,6 @@ class Navbar extends Component{
                     Contact Us
                 </button>
             </Link>
-            <Link to="/addproject" className="mx-lg-3 mx-2">
-                <button className="btn btn-dark">
-                    Add Project
-                </button>
-            </Link>
             <button
             className="navbar-toggler"
             data-target="#collapse"
@@ -27,10 +22,9 @@ class Navbar extends Component{
             <span className="fas fa-bars text-dark"></span>
             </button>
             <div className="collapse navbar-collapse flex-grow-0" id="collapse">
-                    <Link to="/project" className="nav-link text-dark">Project</Link>
-                    <Link to="/blog" className="nav-link text-dark">Blog</Link>
-                    <Link to="/allblog" className="nav-link text-dark">All Blogs</Link>
-                    <Link to="/allproject" className="nav-link text-dark">All Project</Link>
+                    <Link to="/addproject" className="nav-link text-dark">Add Project</Link>
+                    <Link to="/addblog" className="nav-link text-dark">Add Blog</Link>
+                    <Link to="/addrecommendation" className="nav-link text-dark">Add Reccom.</Link>
             </div>
         </div>
     </nav>  

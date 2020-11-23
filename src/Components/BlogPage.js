@@ -8,11 +8,11 @@ function BlogPage(props){
                 const {blogs} = value;
                 const id = props.match.params.id;
                 const blog = blogs.filter((blog) => blog.id == id)[0];
-                const {imageUrl,title,content,body} = blog;
+                const {ImageUrl,title,content} = blog;
                 return(
                     <div className="container py-2 markdown">
                         <div className="row justify-content-center">
-                            <img src={imageUrl} alt={title} className="w-75" />
+                            <img src={ImageUrl} alt={title} className="w-75" />
                         </div>
                         <div className="mt-3">
                             <p className="h2 font-weight-light text-center">{title}</p>

@@ -15,7 +15,7 @@ function AllBlogs(){
                         </div>
                         <div className="row justify-content-center text-center mt-2 mb-5">
                             {blogs.map((blog) =>(
-                                    <div key={uuid()} className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 my-2">
+                                    <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 my-2">
                                         <BlogCard key={uuid()} blog={blog}/>
                                     </div>
                             ))

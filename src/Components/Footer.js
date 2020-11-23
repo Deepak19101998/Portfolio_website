@@ -42,10 +42,10 @@ function Footer(){
                             <a href="/">
                                 <i className="fab fa-linkedin d-block h4 text-light"></i>
                             </a>
-                            <a href="">
+                            <a href="/">
                                 <i className="fab fa-github d-block h4 text-light"></i>
                             </a>
-                            <a href="">
+                            <a href="/">
                                 <i className="fas fa-envelope d-block h4 text-light"></i>
                             </a>
                         </div>

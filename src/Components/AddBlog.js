@@ -6,7 +6,7 @@ import '../App.css';
 import { Consumer } from '../context';
 import { v4 as uuid } from 'uuid';
 
-class AddProject extends Component{
+class AddBlog extends Component{
     
     state = {
             imageurl : "",
@@ -35,7 +35,7 @@ class AddProject extends Component{
         let isSuccseeful = true;
         if(isSuccseeful){
             this.setState({
-                submitMessage : "Project Published Successfully",
+                submitMessage : "Bolg Published Successfully",
                 submitMessageTextColor : "text-success h3"
             })
         }
@@ -46,14 +46,14 @@ class AddProject extends Component{
             })
         }
         const {title,imageurl,excerpt} = this.state;
-        const newProject = {
+        const newBlog = {
             id : uuid(),
             title : title,
             ImageUrl : imageurl,
             content : excerpt,
         }
 
-        addHandler("ADD_PROJECT", newProject);
+        addHandler("ADD_BLOG", newBlog);
     }
     render(){
         return(
@@ -66,7 +66,7 @@ class AddProject extends Component{
                             <div className="text-center">
                                 <h1 className="font-weight-light">
                                     <span className="text-info">Add </span>
-                                    Project
+                                    Blog
                                 </h1>
                             </div>
                             <div className="row py-2 mx-lg-4">
@@ -114,7 +114,6 @@ class AddProject extends Component{
                                             <button 
                                                 type="submit"
                                                 className="btn btn-dark btn-block"
-                                                style = {{backgroundColor:"black"}} 
                                                 >
                                                     publish
                                             </button>
@@ -149,4 +148,4 @@ class AddProject extends Component{
     }
 }
 
-export default AddProject;
+export default AddBlog;

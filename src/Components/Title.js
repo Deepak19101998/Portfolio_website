@@ -8,7 +8,7 @@ function Title(){
         <div className="container">
             <div className="row text-center align-items-center">
                 <div className="col-12 col-md-6">
-                <img className="img-fluid rounded-circle" src={Dummy} alt="Doraemon-Image"/>
+                <img className="img-fluid rounded-circle" src={Dummy} alt="Doraemon"/>
                 </div>
                 <div className="col-12 col-md-6">
                     <h1>Hi, I am <span className="text-info">{name}</span></h1>
