@@ -13,7 +13,7 @@ function RecommendationCard(props) {
                     {shortmessage+"...."}
                 </h3>
                 <p className="card-text h5 mb-2">
-                    {name+" Case"}
+                    {name}
                 </p>
                 <p className="card-text h5">
                     {company}

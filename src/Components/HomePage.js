@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from './Title'
 import Recommendation from './Recommendation.js';
-import Technology from './Technology.js';
+import Skill from './Skill.js';
 import Project from './Project';
 import About from './About';
 import Blog from './Blog';
@@ -11,7 +11,7 @@ function HomePage() {
         <div>
             <Title />
             <Recommendation />
-            <Technology />
+            <Skill />
             <Project />
             <About />
             <Blog />

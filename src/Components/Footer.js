@@ -19,11 +19,11 @@ function Footer(){
                     <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 py-3">
                         <div>
                             <h5 className="text-info">More Info</h5>
-                            <Link to="/blog" className="d-block text-light">Blog</Link>
+                            <Link to="/allblog" className="d-block text-light">Blog</Link>
                             <Link to="/" className="d-block text-light">Home</Link>
                             <Link to="/contact" className="d-block text-light">Contact</Link>
-                            <Link to="/project" className="d-block text-light">Projects</Link>
-                            <Link to="/write-a-recommendation" className="d-block text-light">Write a recommendation <span className="fas fa-heart"></span></Link>
+                            <Link to="/allproject" className="d-block text-light">Projects</Link>
+                            <Link to="/addrecommendation" className="d-block text-light">Write a recommendation <span className="fas fa-heart"></span></Link>
                         </div>
                     </div>
                     <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 py-2">

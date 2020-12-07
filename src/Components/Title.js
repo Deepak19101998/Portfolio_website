@@ -5,7 +5,7 @@ function Title(){
     const name = "Deepak Gupta";
     const leadText = "I am a job Seeker";
     return(
-        <div className="container">
+        <div className="container py-5 mt-5">
             <div className="row text-center align-items-center">
                 <div className="col-12 col-md-6">
                 <img className="img-fluid rounded-circle" src={Dummy} alt="Doraemon"/>

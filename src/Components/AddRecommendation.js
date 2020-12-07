@@ -56,7 +56,7 @@ class AddRecommendation extends Component{
                     const {addHandler} = value;
 
                     return(
-                        <div className="container py-4">
+                        <div className="container py-5 mt-5">
                             <div className="text-center">
                                 <p className="display-4"><span className="text-info">Add </span>
                                 Recommendation</p>
@@ -107,6 +107,7 @@ class AddRecommendation extends Component{
                                             <button 
                                                 type="submit"
                                                 className="btn btn-dark float-right"
+                                                style = {{backgroundColor:"black"}}
                                                 >
                                                     publish
                                             </button>

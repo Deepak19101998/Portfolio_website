@@ -9,9 +9,9 @@ function AllProject(){
             {(value) =>{
                 const {projects} = value;
                 return(
-                    <div className="container py-2 my-2">
+                    <div className="container py-5 mt-5">
                         <div className="text-center py-3">
-                            <p className="text-danger display-3">All Projects</p>
+                            <p className="display-4">ALL <span className="text-info">PROJECTS</span></p>
                         </div>
                         <div className="row justify-content-around text-center mt-2 mb-5">
                             {projects.map((abc) => (

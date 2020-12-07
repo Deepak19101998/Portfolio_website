@@ -1,8 +1,8 @@
 import React from 'react';
 import { v4 as uuid } from "uuid";
 
-function TechnologyCard(props){
-    const {name, imageUrl, starsTotal, starsActive}= props.technology;
+function SkillsCard(props){
+    const {name, imageUrl, starsTotal, starsActive}= props.skill;
     
     const starList = [];
     
@@ -24,4 +24,4 @@ function TechnologyCard(props){
         </div>
     )
 }
-export default TechnologyCard;
+export default SkillsCard;

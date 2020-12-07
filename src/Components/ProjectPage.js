@@ -9,8 +9,8 @@ function ProjectPage(props){
                 const project = projects.filter((project) => project.id == id)[0];
                 const {ImageUrl,title,content} = project;
                 return(
-                    <div className="container py-2 markdown">
-                        <div className="row justify-content-center">
+                    <div className="container py-5 mt-5 markdown">
+                        <div className="row justify-content-center pt-4">
                             <img src={ImageUrl} alt={title} className="w-75" />
                         </div>
                         <div className="mt-3">

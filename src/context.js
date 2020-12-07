@@ -35,42 +35,42 @@ export class Provider extends Component{
                 id: 1,
                 ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
                 title:"Project 1",
-                content:"This is my project about...",
+                excerpt:"This is my project about...",
                 body : "Body 1",
             },
             {
                 id: 2,
                 ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
                 title:"Project 2",
-                content:"This is my project about...",
+                excerpt:"This is my project about...",
                 body : "Body 2",
             },
             {   
                 id:3,
                 ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
                 title:"Project 3",
-                content:"This is my project about...",
+                excerpt:"This is my project about...",
                 body : "Body 3",
             },
             {   
               id:4,
               ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
               title:"Project 4",
-              content:"This is my project about...",
+              excerpt:"This is my project about...",
               body : "Body 4",
             },
             {   
               id:5,
               ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
               title:"Project 5",
-              content:"This is my project about...",
+              excerpt:"This is my project about...",
               body : "Body 5",
             },
             {   
               id:6,
               ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
               title:"Project 6",
-              content:"This is my project about...",
+              excerpt:"This is my project about...",
               body : "Body 6",
             },
         ],
@@ -81,31 +81,31 @@ export class Provider extends Component{
                 id: 1,
                 ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
                 title:"Blog 1",
-                content:"This is my Blog about..."
+                excerpt:"This is my Blog about..."
             },
             {
                 id: 2,
                 ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
                 title:"Blog 2",
-                content:"This is my Blog about..."
+                excerpt:"This is my Blog about..."
             },
             {
                 id: 3,
                 ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
                 title:"Blog 3",
-                content:"This is my Blog about..."
+                excerpt:"This is my Blog about..."
             },
             {
               id: 4,
               ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
               title:"Blog 4",
-              content:"This is my Blog about..."
+              excerpt:"This is my Blog about..."
             },
             {
               id: 5,
               ImageUrl:"https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
               title:"Blog 5",
-              content:"This is my Blog about..."
+              excerpt:"This is my Blog about..."
             },
         ],
 
@@ -137,25 +137,25 @@ export class Provider extends Component{
             name: "Random guy 4",
             company: "ABC company",
             designation: "SDE",
-            message: "He gets things done so quickly",
+            message: "He gets thing done so quickly",
           }, 
           {
             id: 4,
             name: "Random guy 5",
             company: "XYZ company",
             designation: "CEO",
-            message: "He gets things done so quickly",
+            message: "He gets thing done so quickly",
           },  
           {
             id: 5,
             name: "Random guy 6",
             company: "MNO company",
             designation: "Employee",
-            message: "He gets things done so quickly",
+            message: "He gets thing done so quickly",
           },      
         ],
 
-        technologies : [
+        skills : [
             {
                 id: 1,
                 imageUrl:"https://storage.googleapis.com/unschool-portfolio-website/html5.png",
@@ -222,14 +222,14 @@ export class Provider extends Component{
         ]
     }
     
-    render(){
-        return(
-            <Context.Provider value={this.state}>
-                {this.props.children}
-            </Context.Provider>
-        )
+    render() {
+      return (
+        <Consumer.Provider value={this.state}>
+          {this.props.children}
+        </Consumer.Provider>
+      );
     }
-}
-
-export const Consumer = Context.Consumer;
+  }
+  
+  export const Consumer = Context.Consumer;
 

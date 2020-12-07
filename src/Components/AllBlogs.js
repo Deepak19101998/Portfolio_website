@@ -9,9 +9,9 @@ function AllBlogs(){
             {(value)=>{
                 const {blogs} = value;
                 return(
-                    <div className="container py-2 my-2">
+                    <div className="container py-5 mt-5">
                         <div className="text-center py-3">
-                            <p className="text-danger display-3">All Blogs</p>
+                            <p className="display-4">ALL <span className="text-info">BLOGS</span></p>
                         </div>
                         <div className="row justify-content-center text-center mt-2 mb-5">
                             {blogs.map((blog) =>(

@@ -9,16 +9,18 @@ import BlogPage from "./Components/BlogPage.js"
 import AddProject from "./Components/AddProject";
 import AddBlog from "./Components/AddBlog";
 import HomePage from "./Components/HomePage.js";
-import {Provider} from "./context.js";
+import { Provider } from "./context.js";
 import AllProject from "./Components/AllProject.js";
 import AllBlogs from "./Components/AllBlogs.js";
 import AddRecommendation from "./Components/AddRecommendation.js";
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import ScrollToTop from "./Components/ScrollToTop.js";
 
 function App(){
   return(
     <Provider>
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
           <Switch>
 
@@ -26,7 +28,6 @@ function App(){
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/allproject" component={AllProject} />
             <Route exact path="/allblog" component={AllBlogs}/>
-            <Route exact path="addrecommendation" component={AddRecommendation} />
             <Route exact path="/addproject" component={AddProject} />
             <Route exact path ="/addblog" component={AddBlog}/>
             <Route exact path ="/addrecommendation" component={AddRecommendation}/>

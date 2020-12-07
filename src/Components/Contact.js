@@ -40,7 +40,7 @@ class Contact extends Component{
     render(){
         const {submitMessageTextColor, submitMessage} = this.state;
         return(
-            <div className="container-fluid py-4">
+            <div className="container-fluid py-5 mt-5">
                 <h1 className="font-weight-light text-center py-3"> 
                     <span className="text-info">Thank You!</span> for your support
                 </h1>

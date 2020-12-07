@@ -9,3 +9,7 @@
   height: auto;
   margin-top: 20px;
 }
+
+.color-custom {
+  background-color: rgb(31, 86, 104);
+}

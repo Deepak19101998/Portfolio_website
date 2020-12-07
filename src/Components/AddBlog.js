@@ -16,12 +16,14 @@ class AddBlog extends Component{
             submitMessage : "",
             submitMessageTextColor : "",
         };
-    
 
     haldleChange = (event) =>{
         this.setState({
             [event.target.name] : event.target.value,
         });
+        // $(".form-control").focus(function(){
+        //     $(".form-control").css('background','blue');
+        // })
     };
 
     handleBodyChange = (value) => {
@@ -50,10 +52,11 @@ class AddBlog extends Component{
             id : uuid(),
             title : title,
             ImageUrl : imageurl,
-            content : excerpt,
+            excerpt : excerpt,
         }
 
         addHandler("ADD_BLOG", newBlog);
+
     }
     render(){
         return(
@@ -62,7 +65,7 @@ class AddBlog extends Component{
                     const {imageurl,title,excerpt,body,submitMessage,submitMessageTextColor} = this.state;
                     const {addHandler} = value;
                     return(
-                        <div className="container-fluid py-lg-3 my-lg-4 my-3 py-2">
+                        <div className="container-fluid py-5 mt-5">
                             <div className="text-center">
                                 <h1 className="font-weight-light">
                                     <span className="text-info">Add </span>
@@ -114,6 +117,7 @@ class AddBlog extends Component{
                                             <button 
                                                 type="submit"
                                                 className="btn btn-dark btn-block"
+                                                style = {{backgroundColor:"black"}}
                                                 >
                                                     publish
                                             </button>

@@ -50,7 +50,7 @@ class AddProject extends Component{
             id : uuid(),
             title : title,
             ImageUrl : imageurl,
-            content : excerpt,
+            excerpt : excerpt,
         }
 
         addHandler("ADD_PROJECT", newProject);
@@ -62,7 +62,7 @@ class AddProject extends Component{
                     const {imageurl,title,excerpt,body,submitMessage,submitMessageTextColor} = this.state;
                     const {addHandler} = value;
                     return(
-                        <div className="container-fluid py-lg-3 my-lg-4 my-3 py-2">
+                        <div className="container-fluid py-5 mt-5">
                             <div className="text-center">
                                 <h1 className="font-weight-light">
                                     <span className="text-info">Add </span>
